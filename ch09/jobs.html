@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="javajam.css">
+    <title>JavaJam Job Page Under Construction</title>
+</head>
+<body>
+<div id="wrapper">
+ <header>
+   <h1><a href="index.html">JavaJam Coffee Bar</a></h1>
+ </header>
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li> 
+    <li><a href="menu.html">Menu</a></li> 
+	  <li><a href="music.html">Music</a></li>
+    <li><a href="jobs.html">Jobs</a></li>
+  </ul>
+</nav>
+<main>
+  <div id="herojobs"></div>
+  <h2>Jobs at JavaJame</h2>
+  <p>Want to work at JavaJam? Fill out the form below to start your application. 
+    All information is required.</p>
+  <form method="post" action="https://webdevbasics.net/scripts/javajam8.php">
+    <label for="myName">Name:</label>
+    <input type="text" name="myName" id="myName" required oninvalid="this.setCustomValidity('Please enter your name.')">
+    <label for="myEmail">E-mail:</label>
+    <input type="text" name="myEmail" id="myEmail" required oninvalid="this.setCustomValidity('Please enter an email address.')">
+    <label for="myStart">Start Date:</label>
+    <input type="date" name="myStart" id="myStart" required>
+    <label for="myExperience">Experience:</label>
+    <textarea name="myExperience" id="myExperience" rows="2" cols="20" required oninvalid="this.setCustomValidity('Please enter your experience.')"></textarea>
+    <input type="submit" value="Apply Now" id="mySubmit">
+  </form>
+</main>
+  <footer>
+    Copyright &copy; 2020 JavaJam Coffee Bar<br>
+    <a href="mailto:Chase@Stephenson.com">Chase@Stephenson.com</a>
+  </footer>
+</div>
+</body>
+</html>
