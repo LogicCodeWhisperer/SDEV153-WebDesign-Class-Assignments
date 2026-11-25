@@ -20,9 +20,7 @@ header a:visited {color: #221811}
 header a:hover {color: #FEF6C2}
 
 h1 {font-size: 2em;}
-
 h2 {color: #8C3826;}
-
 h3 {color: #8C3826;}
 
 h4 {background-color: #D2B48C;
@@ -47,7 +45,8 @@ nav li {padding: .5em 1em .5em 1em;
         width: 100%;
         border-bottom: 1px solid #FEF6C2}
 
-nav ul {list-style-type: none;
+nav ul {display: flex; 
+        list-style-type: none;
         padding-left: 0;
         flex-direction: column;
         margin: 0;
@@ -58,9 +57,9 @@ main {padding: 0 0 2em 0;
       display: block;
       background-color: #FEF6C2;}
 
-main h2, h3, h4, p, div, ul, dl {padding: 0 1em 0 1em;}
+main h2, h3, h4, p, div, dl {padding: 0 1em 0 1em;}
 
-main ul {padding:0 0 0 2em;}
+main ul {padding: 0 0 0 2em;}
 
 img {padding-left: 10px;
      padding-right: 10px;}
@@ -120,12 +119,11 @@ input, textarea { margin-bottom: .5em; }
 @media (min-width: 600px){
 
 header {text-align: center;
-         padding-left: 0;}
+        padding-left: 0;}
         
 h1 {font-size: 3em;}
 
-nav ul {display: flex;
-        flex-direction: row;
+nav ul {flex-direction: row;
         flex-flow: row nowrap;
         justify-content: space-around;}
  
@@ -167,8 +165,7 @@ footer { grid-area: f; }
 
 header {background-image: url(Images/coffeelogo.jpg)}
 
-nav ul {display: flex;
-        flex-direction: column}
+nav ul {flex-direction: column}
 
 #wrapper {display: grid;
           grid-template: "h h"
