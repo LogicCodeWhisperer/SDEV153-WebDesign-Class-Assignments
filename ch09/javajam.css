@@ -157,6 +157,7 @@ h4 {margin-left: 10%;
     margin-right: 10%}}
 
 @media (min-width: 1024px){
+@supports (display: grid){
 
 header { grid-area: h; }
 nav    { grid-area: n; }
@@ -171,5 +172,5 @@ nav ul {flex-direction: column}
           grid-template: "h h"
                          "n m"
                          "f f"
-                        /200px;}
+                        /200px;}}
 }
