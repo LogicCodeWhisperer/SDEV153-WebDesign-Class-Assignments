@@ -48,7 +48,7 @@ nav li {padding: .5em 1em .5em 1em;
         border-bottom: 1px solid #FEF6C2}
 
 nav ul {list-style-type: none;
-        padding-left: 0;
+        display: flex;
         flex-direction: column;
         margin: 0;
         padding: 0;
@@ -100,12 +100,11 @@ footer {background-color: #D2B48C;
 @media (min-width: 600px){
 
 header {text-align: center;
-         padding-left: 0;}
+        padding-left: 0;}
         
 h1 {font-size: 3em;}
 
-nav ul {display: flex;
-        flex-direction: row;
+nav ul {flex-direction: row;
         flex-flow: row nowrap;
         justify-content: space-around;}
  
@@ -138,8 +137,7 @@ footer { grid-area: f; }
 
 header {background-image: url(Images/coffeelogo.jpg)}
 
-nav ul {display: flex;
-        flex-direction: column}
+nav ul {flex-direction: column}
 
 #wrapper {display: grid;
           grid-template: "h h"
