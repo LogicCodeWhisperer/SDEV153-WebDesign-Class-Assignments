@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="codinghelpcenter.css">
+    <link rel="icon" href="Images/CHCLogo.png" sizes="32x32" type="image/x-icon">
+    <title>Coding Help Center</title>
+</head>
+<body>
+<div id="wrapper">
+ <header>
+  <h1><a href="index.html">Coding Help Center</a></h1>
+ </header>
+<nav>
+  <ul>
+    <li><a class="button" href="index.html">Home</a></li>
+    <li><a class="button" href="diagrams.html">Diagrams</a></li>
+    <li><a class="button" href="IDEs.html">IDE's</a></li>
+    <li><a style="color:#0074a1">Language Setup</a></li>
+    <li><a class="button" href="githubintegration.html">GitHub Integration</a></li>
+    <li><a class="button" href="resources.html">Resources</a></li>
+  </ul>
+</nav>
+<main>
+  <h2>Setup language Essentials</h2>
+  <h3>Java</h3>
+  <p>Before you can compile the Java language, you must first install the Java development kit located at the link provided.
+     You can code in the language, but you will find that an error will occur because your computer will not recognize how to 
+     read nor execute the program written in the language. At the time of this writing Orcale allows users without an account 
+     to download Java SE Development Kit versions 27.0.1.1 and 25.0.5.1 while creating an account will allow for earlier versions.
+    <br>
+    <br>
+     <b>Note:</b> that if a program is written in latest version, it cannot be read by an earlier installed version.<br>
+     <a href="https://www.oracle.com/java/technologies/downloads/">Java Development Kit</a>
+     <br><br>
+     Below is an image showing the kit download for Windows. Ensure that you are dowloding the correct version for your platform.<br> 
+  </p>
+  <img src="Images/JDKwindows.png" alt="JDK download help" width="711" height="367.5"><br><br>
+  <h4>Java Extentions and Settings in Visual Studio Code</h4>
+  <p>
+     You can turn off the Java inlay hints such as x: or s: to help with confusion as as you will learn proper coding over time. 
+     By default, it is set to literal; change this setting to none. Search the settings by either pressing [ctrl][+][,] simultaneously or
+     locating the gear icon in the bottom left corner of the VS Code window. Type "java inlay" and it should be the first option.<br><br>
+     <img src="Images/JavaInlay.png" alt="Java Inly Hint setting" align="center" width="504.75" height="145.5"><br><br>
+  </p>  
+  <h4>Common Issues</h4>
+  <p>
+     You may or may not notice yellow squiggly lines at the top of the java text document indicating that you have not declared a package, 
+     this is a common warning if the source folder for your project is not correct. Ensure that you have opened your root folder for your 
+     project. If you have done that and are still getting the warning, save your project, exit VS Code and the open VS code again. If you 
+     are still encountering the warning you may have to try placing a .json file in your root directory of the project folder force VS Code 
+     to recognize each file path; though, if installed correctly, this method should not be necessary.<br><br>
+     <b>Note:</b> The yellow squiggly lines should not impact execution, they are simply annoying. 
+  </p>
+</main>
+  <footer>
+    Copyright &copy; 2026 Coding Help Center<br>
+    <a href="mailto:codinghelpcenter@yahoo.com">codinghelpcenter@yahoo.com</a>
+  </footer>
+</div>  
+</body>
+</html>

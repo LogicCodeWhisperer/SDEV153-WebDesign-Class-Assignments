@@ -1,0 +1,200 @@
+* {box-sizing:border-box;}
+
+body {margin: 0;
+      background-image: url(Images/MainBackground.jpg); 
+      color: #978e57;
+      font-family: Tahoma, Arial, sans-serif;}
+
+header {color:#747d81;
+        text-align: center;
+        background-color: #00415a;
+        background-image: url(Images/CHCHeader.png);
+        background-repeat: no-repeat;
+        padding: 0 0 5px 150px;
+        height: 128px;
+        border-bottom: 2px solid #978e57;}
+
+header a {text-decoration: none}
+header a:link {color: #747d81}
+header a:visited {color: #747d81}
+header a:hover {color: #0074a1}
+
+h1 {font-size: 2.2em;
+    padding-top: 15px;}
+
+h2 {font-size: 2em;
+    text-align: center;}
+
+h3 {background-color: #638b9b;
+    color: #00415a;
+    text-align: center;
+    font-size: 1.5em}
+
+h4 {background-color: #00415a;
+    color: #638b9b;
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    padding-left: .5em;
+    padding-bottom: 0;
+    clear: left;}
+
+.h4align {padding-left: .5em;
+          padding-bottom: 0;
+          clear: left;}
+
+nav {text-align: center;
+     font-weight: bold;
+     font-size: 1em;
+     position: sticky;
+     top: 0;}
+
+nav a {text-decoration: none;}
+nav a:link {color: #1f1f1f;}
+nav a:visited {color: #00415a}
+nav a:hover {color: #0074a1;}
+
+nav li {padding: .5em 1em .5em 1em;
+        width: 100%;}
+
+nav ul {list-style-type: none;
+        padding-left: 0;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        font-size: 1.25em;}
+
+main {padding: 0 2em 5em;
+      display: block;
+      background-color: #1f1f1f}
+
+main h2, h3, h4, p, div, ul, dl {padding: 0 1em 0 1em;}
+
+main ul {padding:0 0 0 2em;}
+
+p {text-align: justify;}
+
+table, td {margin: auto;
+           text-align: center;
+           border:2px solid #978e57;}
+
+a {color: #0074a1;
+   text-decoration: none;
+   line-height: 150%;}
+
+a:hover{color: #00415a;}
+
+img {padding-left: 10px;
+     padding-right: 10px;}
+
+footer {background-color: #00415a;
+        font-size: .75em;
+        font-style: italic;
+        text-align: center;
+        padding: 1em;
+        border-top: 2px solid #978e57;}
+
+#wrapper { background-color: #1f1f1f;
+           padding: 0}
+
+.details {padding-left: 20%;
+          padding-right: 20%;
+          overflow: auto;}
+
+.button {background: gray; 
+         padding:8px; 
+         text-align: center; 
+         border-radius: 10px; 
+         box-shadow: 0 5px 10px rgba(0,0,0,1); 
+         text-decoration: none;
+         color: #00415a; 
+         font-weight: bold;  
+         transition: background 0s, color 0s; }
+
+#vscodeone {background-image: url(Images/VSCodeDownloadMobile.png);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            width: 462.75px;
+            height: 240px;
+            margin: auto}
+
+#homehero {background-image: url(Images/road.jpg);
+           background-size: 100% 100%;
+           background-repeat: no-repeat;
+           height: 300px;}
+
+#heromugs {background-image: url(Images/threemugs.jpg);
+           background-size: 100% 100%;
+           background-repeat: no-repeat;
+           height: 300px;}
+
+#heroguitar {background-image: url(Images/guitar.jpg);
+             background-size: 100% 100%;
+             background-repeat: no-repeat;
+             height: 300px;}
+
+#mobile {display: inline;}
+#desktop {display: none}
+
+@media (min-width: 600px){
+
+header {text-align: center;
+        padding-left: 0;}
+        
+h1 {font-size: 2.2em;}
+
+nav ul {display: flex;
+        flex-direction: row;
+        flex-flow: row nowrap;
+        justify-content: space-around;}
+
+
+#heromugs {background-image: url(Images/heromugs.jpg);}
+#heroguitar {background-image: url(Images/heroguitar.jpg);}
+
+#flow {display: flex;
+       flex-direction: row;}
+
+#mobile {display: none}
+
+#desktop {display: inline}
+
+.details {display: flex;
+          flex-direction: row;}
+        
+h4 {margin-left: 10%;
+    margin-right: 10%}}
+
+@media (min-width: 1024px){
+
+header {grid-area: h; }
+
+nav    {grid-area: n; 
+        white-space: nowrap;
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0;
+        padding: 0;
+        justify-content: center;}
+
+nav li{display: inline-block;}
+
+main   { grid-area: m; }
+footer { grid-area: f; }
+h1 {font-size: 3em;}
+
+.justify {justify-content: center;
+          align-items: center;}
+
+#vscodeone {background-image: url(Images/VSCodeDownloadDesktop.png);
+            width: 752.25px;
+            height: 391.5px;}
+
+#wrapper {display: grid;
+          grid-template: "h h"
+                         "n n"
+                         "m m"
+                         "f f"
+                        /200px;}
+
+}
