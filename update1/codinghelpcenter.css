@@ -118,20 +118,6 @@ footer {background-color: #00415a;
             height: 240px;
             margin: auto}
 
-#homehero {background-image: url(Images/road.jpg);
-           background-size: 100% 100%;
-           background-repeat: no-repeat;
-           height: 300px;}
-
-#heromugs {background-image: url(Images/threemugs.jpg);
-           background-size: 100% 100%;
-           background-repeat: no-repeat;
-           height: 300px;}
-
-#heroguitar {background-image: url(Images/guitar.jpg);
-             background-size: 100% 100%;
-             background-repeat: no-repeat;
-             height: 300px;}
 
 #mobile {display: inline;}
 #desktop {display: none}
@@ -148,9 +134,6 @@ nav ul {display: flex;
         flex-flow: row nowrap;
         justify-content: space-around;}
 
-
-#heromugs {background-image: url(Images/heromugs.jpg);}
-#heroguitar {background-image: url(Images/heroguitar.jpg);}
 
 #flow {display: flex;
        flex-direction: row;}
